@@ -1,0 +1,186 @@
+1. 각 제어문에 대해서 설명하세요. ( 선언 형식, 처리 과정 )
+	제어문: 프로그램의 흐름(실행 순서)를 제어하는 문
+	종류: 조건문, 분기문, 반복문, 조건 반복문
+
+	1) if 문
+	- if(조건문) {
+
+	}
+
+	- 조건문이 참일 때만 {} 블럭을 실행
+
+
+
+	2) if~else 문
+	if(조건문) {
+	
+	} else {
+	
+	}
+
+	- 조건문이 참일 경우 { } 블럭을 실행하고, 조건문이 거짓이면 else {} 블럭을 실행한다.
+ 
+
+
+	3) switch 문
+	switch(key) {
+		case value:
+			// 명령코딩
+			[ break; ]
+		case value:
+			[ break; ]
+		default:
+			break;
+	}
+
+	-  조건문에 해당하는 case의 경우 실행, 해당없는 경우 default 실행, break문을 실행하여 정지, 정수형, 문자열 값만 비교 가능
+
+
+
+	4) for 문
+	for( 초기식 ; 조건식 ; 증감식) {
+		// 명령코딩
+	}
+
+	- 초기식 -> 조건식 -> {}블럭실행 -> 증감식. 조건식이 참일 경우 반복, 거짓일 경우 빠져나감
+
+
+
+	5) foreach 문
+	for(  자료형 변수명 : 배열 또는 컬렉션 ) {
+		//
+	}
+
+	- 배열이나 컬렉션 안의 내용을 확인
+
+
+
+	6) while 문
+	while (조건문) {
+
+	}
+
+	- 조건반복문, 조건식이 참일 동안 계속 반복
+
+
+
+	7) do~while 문
+	do {
+	
+	} while(조건문);
+
+	-  일단은 조건식의 참/거짓에 상관없이 {} 블럭을 한번은 실행한다.
+
+
+
+	8) break 문
+	- 제어문을 빠져나가는 문
+
+
+
+	9) continue 문
+	- 제어문 } // -> 조건식
+		    } // -> 증감식
+
+
+	- 현재 반복문의 나머지 실행을 건너뛰고 다음 반복으로 이동(증감식이 있는 경우 증감식을 수행)
+
+
+
+//Alt + Shift + A를 눌러
+
+2. 아래 실행 결과를 보고 코딩하세요.
+	실행결과)
+   01 - 헬로우 월드  
+   02 - 헬로우 월드  
+   03 - 헬로우 월드  
+   04 - 헬로우 월드  
+   05 - 헬로우 월드  
+   06 - 헬로우 월드  
+   07 - 헬로우 월드  
+   08 - 헬로우 월드  
+   09 - 헬로우 월드  
+   10 - 헬로우 월드
+
+
+		for (int i = 1; i <= 10; i++) {
+			System.out.printf("%d - 헬로우 월드 \n", i);
+		}
+
+
+
+3. 	1~10까지의 홀수의 합을 출력하는 코딩을 하세요 
+	1) for 문 사용해서 풀기
+
+
+		int sum = 0;
+		for (int i = 1; i <= 10; i+=2) {
+			System.out.printf("%d+", i);
+			sum+= i;
+		}
+		System.out.printf("=%d", sum);
+
+
+	2) while 문 사용해서 풀기	
+
+		int i = 0, sum = 0;
+		while ( i <= 10) {
+			if ( i % 2 == 1) {
+				System.out.printf("%d+", i);
+				sum += i;
+			}
+			i++;
+		}
+		System.out.printf("=%d", sum);
+
+
+
+4. 10명의 국어점수를 저장할 kors 배열을 선언하고 
+    0~100 점 사이의 랜덤한 값을 발생시켜 배열을 초기화하고
+    출력하는 코딩을 하세요..
+    ( Math.random() 사용, 반복문 사용 )
+
+   -> 자바에서 배열 선언 형식: 자료형 [] 배열명 = new 자료형[배열크기];
+  	
+
+(방법1)
+      // 0 <= (int)( Math.random() * 101) < 101
+      kors[0] = (int)( Math.random() * 101);
+      kors[1] = (int)( Math.random() * 101);
+      kors[2] = (int)( Math.random() * 101);
+      kors[3] = (int)( Math.random() * 101);
+      kors[4] = (int)( Math.random() * 101);
+      kors[5] = (int)( Math.random() * 101);
+      kors[6] = (int)( Math.random() * 101);
+      kors[7] = (int)( Math.random() * 101);
+      kors[8] = (int)( Math.random() * 101);
+      kors[9] = (int)( Math.random() * 101);
+      
+      System.out.println(kors[0]);
+      System.out.println(kors[1]);
+      System.out.println(kors[2]);
+      System.out.println(kors[3]);
+      System.out.println(kors[4]);
+      System.out.println(kors[5]);
+      System.out.println(kors[6]);
+      System.out.println(kors[7]);
+      System.out.println(kors[8]);
+      System.out.println(kors[9]);     
+
+
+(방법2)
+      int [] kors = new int[10];
+      
+      // 0 <= (int)( Math.random() * 101) < 101
+      for (int i = 0; i < kors.length; i++) {
+         kors[i] = (int)( Math.random() * 101);
+         System.out.println(kors[i]);
+      }
+	
+	
+(방법3)
+	int [] kors = new int[10];
+			
+	for (int i = 0; i < 10; i++) {
+		System.out.printf( "%d \t", (int)(Math.random()*101) );
+	}	
