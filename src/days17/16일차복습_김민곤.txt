@@ -6,7 +6,7 @@
    
    어제 예제) days16.Ex04_06.java 참고
    
-
+   
 		String fileName = ".\\src\\days16\\학생명단.txt";
 		String saveFileName = ".\\src\\days17\\SiStE-Team.html";
 		String [][] students = new String[3][5];
@@ -48,7 +48,6 @@
 			System.out.println( e );
 		}
 		System.out.println(" end ");
-
 
 
 
