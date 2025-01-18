@@ -7,44 +7,46 @@
    어제 예제) days16.Ex04_06.java 참고
    
 
-
 		String fileName = ".\\src\\days16\\학생명단.txt";
-		String saveFileName = ".\\src\\days17\\SiStE.html";
-		
+		String saveFileName = ".\\src\\days17\\SiStE-Team.html";
 		String [][] students = new String[3][5];
 		
-		String name = null;
+		String name = null; // line
 		try (FileReader reader = new FileReader(fileName );
 			 BufferedReader br = new BufferedReader(reader); 
 			 FileWriter writer = new FileWriter(saveFileName) ) {
 			
+			int cnt = 0; // 이름을 읽어온 갯수
+			int cols = students[0].length;
+			while ( (name = br.readLine()) != null ) {
+//				students[행][열]
+				students[cnt/cols][cnt%cols] = name;
+				cnt++;
+			} // while
+	
+			// 파일로 저장..
 			writer.write("<html>");
 			writer.write("<head>");
 			writer.write("</head>");
 			writer.write("<body>");
 			writer.write("<h3>(주)쌍용교육센터 E강의실 학생 명단</h3>");
-			writer.write("<ol>");
-
-
 			
-			for (int i = 0; i < students.length; i++) {
-				String ol = String.format("<h3>%s조</h3>", students[i]);
-				writer.write(ol);
-				for (int j = 0; j < students[i].length; j++) {
-					while ( (students[i][j] = br.readLine()) != null ) {
-						String li = String.format("<li>%s</li>", students[i][j]);
-						writer.write(li);
-					} // while
-				}
-			}
 			
-			writer.write("<ol>");
+			for (int i = 0; i < students.length; i++) { // 행 == 팀
+				writer.write("<h3>" +(i+1)+ "조</h3>");
+				writer.write("<ol>");
+				for (int j = 0; j < students[i].length; j++) { // 열 == 팀원
+					String li = String.format("<li>%s</li>", students[i][j]);
+					writer.write(li);
+				} // for j 
+				writer.write("</ol>");
+			} // for i
+			
 			writer.write("</body>");
 			writer.write("</html>");
 		} catch (Exception e) {
 			System.out.println( e );
 		}
-
 		System.out.println(" end ");
 
 
@@ -65,16 +67,37 @@
 
 
 		String data = "안녕하세요. 홍길동입니다. 이름은 홍길동입니다. 별명도 홍길동입니다.";
+		String word = "홍길동";
+		int wordLength = word.length();
+		
+		int fromIndex = 0; // 찾기 시작 위치
+		int index = -1; // 찾은 위치 저장
+		int cnt = 1;
+		
+		// 2번째 찾았을 때의 위치만 저장	- 없거나 1개만 있을 때 어떻게 할건지도 생각.
+		int start = -1;
+		int end = start + wordLength;
+		
+		while (( index = data.indexOf(word, fromIndex)) != -1 ) {
+			System.out.printf(">%d번째 찾은 위치 : %d\n", cnt, index);
+			fromIndex = index + wordLength;
+	
+			if ( cnt == 2 ) {	// 2를 변수줘서 다르게 할 수도 있음	
+				start = index;
+				end = fromIndex;
+			}
+			cnt++; // cnt를 위에서 출력하자마자 증가시키면 if문에서 값의 직관성이 떨어진다. 마지막에 증가시켜 1이 아니라 2번째라고 볼 수 있도록
+		
+		} // while
 
-		int num = 1;
-		int index = data.indexOf("홍길동");		
-		System.out.printf("> %d번째 찾은 위치 : %d\n", num++, index);
-
-		while (index != -1) {
-			index = data.indexOf("홍길동", index+3);
-			System.out.printf("> %d번째 찾은 위치 : %d\n", num++, index);
-		}
-
+		
+		// String -> StringBuffer 변환 (문자열 수정할 것이기 때문)
+		StringBuffer sb = new StringBuffer(data);
+		
+		sb.replace(start, end, "김민곤");		// 어디서부터 어디까지를 대신할거냐
+		
+		String cdata = sb.toString();
+		System.out.println( cdata );
 
 
 

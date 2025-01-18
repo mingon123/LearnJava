@@ -11,7 +11,8 @@ public class Ex01_05 {
 	public static void main(String[] args) {
 		
 		
-		/* 내꺼 
+		/* 내가 푼거 - 고쳐야함
+		
 //		ㄱ. "홍길동"을 찾아서 모든 위치를 출력하고
 //   	ㄴ. 두 번째 "홍길동"을 본인이름으로 바꿔서 출력하세요. 
 		  실행결과)		
