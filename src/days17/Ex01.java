@@ -14,6 +14,7 @@ public class Ex01 {
 //		   2차원 배열에 5명씩 채워넣고 
 //		   결과와 같이 파일로 저장하기.
 		
+		
 		String fileName = ".\\src\\days16\\학생명단.txt";
 		String saveFileName = ".\\src\\days17\\SiStE-Team.html";
 		String [][] students = new String[3][5];
@@ -31,19 +32,29 @@ public class Ex01 {
 				cnt++;
 			} // while
 	
-			// 파일로 저장..
+			// 
 			writer.write("<html>");
 			writer.write("<head>");
 			writer.write("</head>");
 			writer.write("<body>");
 			writer.write("<h3>(주)쌍용교육센터 E강의실 학생 명단</h3>");
 			
+			/*	출력형식...
+			  <h3>1조</h3>
+			  <ol>
+			    <li>권용범</li>
+				<li>김대원</li>
+				<li>김민곤</li>	
+				<li>김하은</li>
+				<li>라일락</li>
+			  </ol>
+			*/			
 			
 			for (int i = 0; i < students.length; i++) { // 행 == 팀
 				writer.write("<h3>" +(i+1)+ "조</h3>");
 				writer.write("<ol>");
 				for (int j = 0; j < students[i].length; j++) { // 열 == 팀원
-					String li = String.format("<li>%s</li>", students[i][j]);
+					String li = String.format("<li>%s</li>", students[i][j]); // <li>이름</li>
 					writer.write(li);
 				} // for j 
 				writer.write("</ol>");

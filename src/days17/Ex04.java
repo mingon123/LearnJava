@@ -23,18 +23,21 @@ public class Ex04 {
 	      4   "수박수박"
 	    */
 
-		String answer = Solution(7);
+		String answer1 = solution1(3); // 수박수
+		String answer = solution(3); // 수박수
+		// String answer = solution(4);    // 수박수박
+		System.out.println(answer1);
 		System.out.println(answer);
-		
-		
-		
+
 	} // main
 
-	
+	// String answer = ; XX 변경하는 값은 무조건 StringBuffer or StringBuilder 사용!!
 	// 이게 가장 좋음
-	public static String Solution(int n) {
+	public static String solution(int n) {
 		StringBuffer answer = new StringBuffer();
-	
+		
+		// 13/2 = 몫   "수박"
+		// 수박수박수박수박수박수박수
 		for (int i = 1; i <= n/2; i++) {
 			answer.append("수박");
 		} // for i
@@ -42,26 +45,29 @@ public class Ex04 {
 		
 		return answer.toString();
 	}
-}	
 
 
-//	public static String Solution(int n) {
-//		// Strig answer = ;
-//		StringBuffer answer = new StringBuffer();
-//		
-//		for (int i = 1; i <= n; i++) {
-//			/*
-//			if (i%2 == 1) {
-//				answer.append("수");
-//			} else {
-//				answer.append("박");
-//			}
-//			*/
-//			answer.append( i % 2 == 1 ? "수" : "박" );
-//		}
-//		return answer.toString();
-//	}
-//}
+
+	public static String solution1(int n) {
+		// Strig answer = ;
+		StringBuffer answer = new StringBuffer();
+		
+		for (int i = 1; i <= n; i++) {
+			// i 홀수 :  "수"
+			// i 짝수 :  "박"
+
+			/*
+			if (i%2 == 1) {
+				answer.append("수");
+			} else {
+				answer.append("박");
+			}
+			*/
+			answer.append( i % 2 == 1 ? "수" : "박" );
+		}
+		return answer.toString();
+	}
+}
 		
 		
 		

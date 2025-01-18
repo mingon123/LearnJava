@@ -62,17 +62,7 @@ public class Ex11 {
 		
 		// matches() 매칭 검사
 		
-		
-		
 
-
-		// 아래는 내가 대충 정리함
-
-		// 패턴 컴파일	- new 연산자를 사용하지 않고 Pattern.compile로 객체 생성
-		// Pattern compiledPattern = Pattern.compile(pattern);
-
-		// Matcher 객체 생성
-		// Matcher matcher = compiledPattern.matcher(input);
 
 		/*
 		 * 정규표현식을 만들어주는 사이트에서 만들어서 수정하는 것이 좋음

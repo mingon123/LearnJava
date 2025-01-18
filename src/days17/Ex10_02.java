@@ -31,6 +31,7 @@ public class Ex10_02 {
 		int code = -1;
 		
 		try (FileReader reader = new FileReader(fileName)) { 
+			
 			while ((code = reader.read()) != -1) {
 				one = (char) code;	
 			
@@ -41,7 +42,7 @@ public class Ex10_02 {
 	            } else if (Character.isDigit(one)) {
 	                counts[2][one - '0']++; // 숫자
 	            }
-	        }
+	        } // while
 	    } catch (Exception e) {
 	        System.out.println(e);
 	    }

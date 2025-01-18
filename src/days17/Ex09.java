@@ -23,8 +23,7 @@ public class Ex09 {
 		// rnd.nextBoolean(); // 무작위 true/false 반환
 		// rnd.nextDouble(); // 실수(double) 범위 반환 
 		// rnd.nextInt(); // 정수(int) 범위 반환
-		
-		
+				
 		
 		// [2] Objects 클래스
 		// Object의 보조클래스 : Objects 클래스 		- Object가 8~9개밖에 없고 다 오버라이딩해서 사용해야 하니까

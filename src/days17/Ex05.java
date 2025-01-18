@@ -38,20 +38,6 @@ public class Ex05 {
 			System.out.println( name );
 		}
 	
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		System.out.println("end");
 	} // main
 

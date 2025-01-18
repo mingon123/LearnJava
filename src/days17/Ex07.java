@@ -68,11 +68,7 @@ public class Ex07 {
 		
 		// int -> Integer -> Object
 		test(100);
-		
-		
-		
-		
-		
+
 	} // main
 
 	private static void test(Object i) {	// 매개변수를 int를 Object로 받아도 된다.

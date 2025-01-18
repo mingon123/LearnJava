@@ -35,7 +35,6 @@ public class Ex08 {
 		*/
 		
 		
-	
 //		Integer [] m = { 3, 5, 2, 4, 1 };	// Wrapper 클래스로 선언하면 내림차순 선언가능
 		// 					[3, 5, 2, 4, 1]
 		System.out.println(Arrays.toString(m));	// 출력
@@ -45,7 +44,6 @@ public class Ex08 {
 		
 		// 기본 : 오름차순(asc) 정렬
 //		Arrays.sort(m);	// 정렬
-		
 		
 		
 		
@@ -81,7 +79,6 @@ public class Ex08 {
 		//						-> 람다연산자를 사용한 식 : 람다식
 		Arrays.sort(n, (o1, o2) -> o2.compareTo(o1)	);		
 
-		
 		
 		System.out.println(Arrays.toString(n));
 		
