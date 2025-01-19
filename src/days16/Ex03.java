@@ -14,34 +14,32 @@ public class Ex03 {
 	
 	public static void main(String[] args) {
 		
-		/*
-		Card c1 = new Card();
-		System.out.println( c1.toString() );
-		System.out.println( c1 );	// 위와 같음
-		*/
+
+//		Card c1 = new Card();
+//		System.out.println( c1.toString() );
+//		System.out.println( c1 );	// 위와 같음
+
 		
 		// [첫 번째 방법]
-		/*
-		Card c = new Card("HEART", 3);
-		Class cls = c.getClass();
-		String fullName = cls.getName();
-		System.out.println( fullName ); // days16.Card
-		*/
+//		Card c = new Card("HEART", 3);
+//		Class cls = c.getClass();
+//		String fullName = cls.getName();
+//		System.out.println( fullName ); // days16.Card
+
 		
 		// [두 번째 방법]		모든 클래스의 static 필드 : .class 가 존재
-		/*
-		Class cls = Card.class;
-		// 얻어온 Class cls 객체를 사용해서 인스턴스를 생성할 수 있다.
-		// new 클래스명();	 new Card(); 	이렇게 안해도됨.
+//		Class cls = Card.class;
+//		// 얻어온 Class cls 객체를 사용해서 인스턴스를 생성할 수 있다.
+//		// new 클래스명();	 new Card(); 	이렇게 안해도됨.
+//		
+//		// Unhandled exception type IllegalAccessException - 
+//		try {
+//			// The method newInstance() from the type Class is deprecated since version 9  - 가운데 취소선 그어져있는 멤버는 미래에 사라질 메서드,필드
+//			Card c = (Card) cls.newInstance();
+//		} catch (InstantiationException | IllegalAccessException e) {
+//			e.printStackTrace();
+//		}
 		
-		// Unhandled exception type IllegalAccessException - 
-		try {
-			// The method newInstance() from the type Class is deprecated since version 9  - 가운데 취소선 그어져있는 멤버는 미래에 사라질 메서드,필드
-			Card c = (Card) cls.newInstance();
-		} catch (InstantiationException | IllegalAccessException e) {
-			e.printStackTrace();
-		}
-		*/		
 		
 		// [세 번째 방법]
 		String className = "days16.Card";	// 풀네임

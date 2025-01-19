@@ -30,15 +30,15 @@ public class Ex10_03 {
 		System.out.println( sum );
 		
 		
-		/*
-		int [] m = {3,5,2,4,1};
-		
-		int sum = 0;
-		for (int i = 0; i < m.length; i++) {
-			sum += m[i];
-		}
-		System.out.println(sum);
-		*/
+
+//		int [] m = {3,5,2,4,1};
+//		
+//		int sum = 0;
+//		for (int i = 0; i < m.length; i++) {
+//			sum += m[i];
+//		}
+//		System.out.println(sum);
+
 		
 		
 		

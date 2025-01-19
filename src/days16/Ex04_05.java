@@ -25,7 +25,8 @@ public class Ex04_05 {
 		//			 Type...a
 		//			 T	String
 		// String [] -> List<String> 변환
-		/* [1]
+		
+		// [1]
 		List<String> list = Arrays.asList(nameArr);
 		list.forEach(new Consumer<String>() {
 
@@ -34,7 +35,7 @@ public class Ex04_05 {
 				System.out.println(name);
 			}
 		});
-		*/
+
 		
 		// [2]								-> : 람다
 //		Arrays.asList(nameArr).forEach(name -> System.out.println(name));

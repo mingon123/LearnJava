@@ -21,31 +21,31 @@ public class Ex11 {
 		 * 1. 정규표현식( Regular Expression == regex(p) )
 		 */
 
-		String[] data = { "bat", "baby", "bonus", "cA", "ca", "co", "c.", "c0", "car", "combat", "count", "date", "disc", "fx" };
+		String[] data = { "ab", "bat", "baby", "bonus", "cA", "ca", "co", "c.", "c0", "car", "combat", "count", "date", "disc", "fx" };
 
 		// [ 정규표현식을 설명하세요 ]
-//		String regex = "c[a-z]*";	// c문자로 시작, 소문자가 0~여러개 패턴 
-//		String regex = "c[a-z]";	// c문자로 시작, 소문자 1개 와야함.
+		String regex = "c[a-z]*";		// c문자로 시작, 소문자가 0~여러개 패턴 
+//		String regex = "c[a-z]";		// c문자로 시작, 소문자 1개 와야함.
 //		String regex = "c[a-zA-Z]";		// c문자 + 알파벳 1개
 //		String regex = "c[a-zA-Z0-9]";	// c문자 + 알파벳 or 숫자 1개
-//		String regex = "c\\w";			// c문자 + 문자 1개
-		String regex = ".*";			// 모든 문자
-		// String regex = "c.";
-		// String regex = "c\\.";
-		// String regex = "c[0-9]";
-		// String regex = "c.*t";
-		// String regex = "[b|c]";
-		// String regex = "[bc]";
-		// String regex = "[b-c].*";
-		// String regex = "[^bc].*";
-
-		// String regex = ".*a.*";
-
-		// String regex = "[^bcd].*";
-
-		// String regex = "[a-zA-Z].*";
-		// String regex = "[ae-zA-Z].*";
-		// String regex = "[a-zA-Z&&[^b-d]].*";
+//		String regex = "c\\w";			// c문자 + 알파벳+숫자 1개
+//		String regex = ".*";			// 모든 문자
+//		String regex = "c.";			// c문자 + 모든 문자 1개
+//		String regex = "c\\.";			// c문자 + .
+//		String regex = "c[0-9]";		// c문자 + 한자리 숫자
+//		String regex = "c.*t";			// c문자 + t로 끝나는 문자
+//		String regex = "[b|c]";			// b or c
+//		String regex = "[bc]";			// bc
+//		String regex = "[b-c].*";		// b~c로 시작하는 모든 문자
+//		String regex = "[^bc].*";		// bc로 시작하지 않는 모든 문자
+//
+//		String regex = ".*a.*";			// a가 들어가 있는 모든 문자
+//
+//		String regex = "[^bcd].*";		// bcd로 시작하지 않는 모든 문자
+//
+//		String regex = "[a-zA-Z].*";	// 알파벳 전부
+//		String regex = "[ae-zA-Z].*";	// a, e~z + 대문자 전부로 시작하는 모든문자
+//		String regex = "[a-zA-Z&&[^b-d]].*";	// 알파벳 전부인데 b~d는 제외로 시작하는 모든 문자
 
 		
 		// 1. Pattern 객체 생성
@@ -60,9 +60,9 @@ public class Ex11 {
 		}
 		
 		
-		// matches() 매칭 검사
-		
 
+		
+		
 
 		/*
 		 * 정규표현식을 만들어주는 사이트에서 만들어서 수정하는 것이 좋음

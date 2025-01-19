@@ -38,7 +38,7 @@ public class Ex04_04 {
 		System.out.println( ext );
 		*/
 		
-		/* 
+
 		// [2] substring
 		int index = path.lastIndexOf("\\");
 //		System.out.println(index);
@@ -49,7 +49,7 @@ public class Ex04_04 {
 //		System.out.println(index);
 		ext = fileName.substring(index);
 		System.out.println(ext);
-		*/
+
 		
 		
 		
@@ -65,8 +65,8 @@ public class Ex04_04 {
 	} // main
 	
 	
-	
-	/* [1]
+	/*
+	// [1]
 	public static void main(String[] args) {
 		// [문제]	 
 		String dir = "C:\\temp\\src";
@@ -78,14 +78,14 @@ public class Ex04_04 {
 		} 
 
 		// 열고자하는 전체 경로 = dir + fileName
-//		String path = dir + fileName;
-		String path = String.join("", dir, fileName);
+		String path = dir + fileName;
+//		String path = String.join("", dir, fileName);
 		
 		// C:\temp\src\Sample.java
 		System.out.println( path ); // C:\temp\srcSample.java	dir, fileName 사이에 \가 없음
 
 	} // main
-	*/ 
+	*/
 	
 	
 	

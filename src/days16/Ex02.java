@@ -69,8 +69,8 @@ public class Ex02 {
 		// Point p2 = p1.clone();
 		
 		// Type mismatch: cannot convert from Object to Point
-		// Point p2 = (Point) p1.clone();	// clone은 사용할 때 다운캐스팅 필요 - 반환형 object일 때
-		Point p2 = p1.clone();				// 반환형을 Point로 하면 다운캐스팅 필요없음 - jdk1.5~
+		Point p2 = (Point) p1.clone();	// clone은 사용할 때 다운캐스팅 필요 - 반환형 object일 때
+//		Point p2 = p1.clone();				// 반환형을 Point로 하면 다운캐스팅 필요없음 - jdk1.5~
 		
 		System.out.println( p1 );	// Point [x=10, y=20]  // .toString() 자동 생략
 		System.out.println( p2 );

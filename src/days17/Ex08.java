@@ -37,10 +37,10 @@ public class Ex08 {
 		
 //		Integer [] m = { 3, 5, 2, 4, 1 };	// Wrapper 클래스로 선언하면 내림차순 선언가능
 		// 					[3, 5, 2, 4, 1]
-		System.out.println(Arrays.toString(m));	// 출력
+//		System.out.println(Arrays.toString(m));	// 출력
 		
-//		Arrays.fill(m, -1);	// 채우기
-//		System.out.println(Arrays.toString(m));
+		Arrays.fill(m, -1);	// 채우기
+		System.out.println(Arrays.toString(m));
 		
 		// 기본 : 오름차순(asc) 정렬
 //		Arrays.sort(m);	// 정렬

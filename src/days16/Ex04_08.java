@@ -40,9 +40,10 @@ public class Ex04_08 {
 		if( name.isEmpty() ) {}
 		if( name.length() == 0 ) {}	// 위와 2개 같다
 		
-//		name.subSequence(0, 0)
-//		name.repeat(10);	// 반복
-//		name.lines();
+		name.subSequence(0, 0);
+		name.repeat(10);	// 반복
+		name.lines();
+		System.out.println(name.lines());
 		
 		
 	} // main

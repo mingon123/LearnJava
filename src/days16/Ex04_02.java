@@ -59,8 +59,8 @@ public class Ex04_02 {
 		
 		/*
 		// str.contains : 단순히 있다 없다만 확인
-		System.out.println( str.contains("main") );		// true				
-		System.out.println( str.contains("kenic") );	// false
+			System.out.println( str.contains("main") );		// true				
+			System.out.println( str.contains("kenic") );	// false
 		
 		// 있는 위치 : indexOf(), lastIndexOf()	// 찾은 위치값을 int로 반환
 		System.out.println( str.indexOf("main") );	// 19				

@@ -20,7 +20,7 @@ public class Ex05 {
 //		String regex = "\\s*,\\s*";
 //		team1.split(regex);
 		
-		StringTokenizer st =new StringTokenizer(team1, ",");	// , 기준으로 자름
+		StringTokenizer st = new StringTokenizer(team1, ",");	// , 기준으로 자름
 		
 		System.out.println( st.countTokens() );	// 토큰 갯수
 		

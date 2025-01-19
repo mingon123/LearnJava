@@ -35,7 +35,7 @@ public class Ex09 {
 		if( !Objects.isNull(p) ) {}			
 
 	
-		if( p == null ) {}
+		if( p != null ) {}
 		if( Objects.nonNull(p) ) {}			
 		
 		days13.Point2D p2 = null;
