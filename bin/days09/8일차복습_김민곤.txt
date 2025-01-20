@@ -1,0 +1,139 @@
+1. 주민등록번호를 입력받아서 만나이를 계산후 반환하는 메서드를 선언하세요.. 
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		String rrn = getRrn(scanner);
+
+		int AmericanAge = getAmericanAge(rrn);
+		System.out.println(AmericanAge);
+		
+	} // main
+
+	private static String getRrn(Scanner scanner) {
+		String regex = "\\d{6}-\\d{7}";
+		String rrn;
+		do {
+			System.out.printf("주민등록번호 입력 : ");
+			rrn = scanner.next();
+		} while ( !rrn.matches(regex));
+		return rrn;
+	} // getRrn
+
+	private static int getAmericanAge(String rrn) {
+		int americanAge = getCountingAge(rrn)-1;
+		
+		Date d = new Date();
+		int currentMonth = d.getMonth()+1;
+		int currentDay = d.getDate();
+		
+		int currentMonthDay = currentMonth+currentDay;
+		int birthMonthDay = Integer.parseInt( rrn.substring(2, 6) );
+	
+		if ( currentMonthDay < birthMonthDay ) americanAge--;
+		return americanAge;
+	} // getAmericanAge
+	
+	
+	private static int getCountingAge(String rrn) {
+		int birthYear = Integer.parseInt(getBirthday(rrn).substring(0, 4));
+		Date d = new Date();
+		int currentYear = d.getYear() + 1900;
+		return currentYear - birthYear + 1;
+	} // getCountingAge
+	
+	
+	public static String getBirthday(String rrn) {
+		int year = Integer.parseInt( rrn.substring(0,2) );
+		int month = Integer.parseInt( rrn.substring(2,4) );
+		int day = Integer.parseInt( rrn.substring(4,6) );
+		
+		char gender = rrn.charAt(7);
+		switch (gender) {
+		case '9': case '0':
+			year += 1800;
+			break;
+		case '1': case '2': case '5': case '6':
+			year += 1900;
+			break;
+		default:
+			year += 2000;
+			break;
+		}
+		return String.format("%d년 %02d월 %02d일", year, month, day);
+	} // getBirthday
+
+
+
+2. 10진수 정수를 입력받아서 2진수로 출력하세요.
+
+	public static void main(String[] args) {
+
+		int [] binaryArr = new int[16];
+
+		Scanner scanner = new Scanner(System.in);
+		int n = getNum(scanner);
+		int 몫, 나머지;
+		int index = binaryArr.length-1;
+		
+		while( n != 0 ) {
+			몫 = n / 2;
+			나머지 = n % 2;
+//			System.out.println(나머지);
+			binaryArr[index--] = 나머지;
+			n = 몫;
+		} // while
+		System.out.println(Arrays.toString(binaryArr));
+	} // main
+
+	private static int getNum(Scanner scanner) {
+        System.out.print("정수를 입력하세요: ");
+        return scanner.nextInt();
+    } // getNum
+
+
+
+
+2-2. 10진수 정수를 입력받아서 16진수로 출력하세요.
+ 		
+		int n = 123; //7B로 나타내자
+		int 몫, 나머지; // share, rest
+
+		char [] hex = new char[4];
+		Arrays.fill(hex, '0');
+
+		int index = hex.length-1;
+
+		while (n != 0) {
+			몫 = n/16;
+			나머지 = n%16;
+			// 나머지 10(A = 65), 11(B)...15(F) 저장
+			char value = (char)( 나머지 += 나머지 >= 10 ? 55 : 48); // A(10)는 65이기 때문에 65-10=55 
+			hex[index--] = value;
+
+			n = 몫;
+		} // while
+		System.out.println("0x"+Arrays.toString(hex));
+
+
+
+
+3. 배열 크기를 3 증가하는 코딩을 하세요 . 
+   
+	[1] Arrays.copyOf()
+		int [] m = {1, 2, 3};
+		int [] temp = Arrays.copyOf(m, m.length+3);
+		m = temp; 
+		System.out.println(Arrays.toString(m));
+
+	[2] System.arraycopy
+		int [] m = {1, 2, 3};
+		int [] temp = new int [m.length+3];
+		System.arraycopy(m, 0, temp, 0, m.length);		
+		m = temp;
+		System.out.println( Arrays.toString(m));
+
+
+
+
+

@@ -1,0 +1,86 @@
+1. 선택 정렬(selection sort) 
+   int [] m = new int[10]
+   조건) 위의 배열 m에 1<=~<=100 임의의 정수를 채워넣고 
+        선택정렬 방식으로 내림차순 정렬해서 출력하세요.
+
+	public static void main(String[] args) {
+
+		int [] m = new int[10];
+		Random rnd = new Random();
+		for (int i = 0; i < m.length; i++) {
+			m[i] = rnd.nextInt(101);
+		}
+		
+		System.out.println(Arrays.toString(m));
+		
+		selectSortDesc(m);
+		
+		System.out.println(Arrays.toString(m));
+		
+	} // main
+
+	private static void selectSortDesc(int[] m) {
+		for (int i = 0; i < m.length; i++) {
+			int maxIndex = i;
+			for (int j = i+1; j < m.length; j++) {
+				if(m[j]>m[maxIndex]) maxIndex=j;
+			}
+			
+			int temp = m[i];
+			m[i] = m[maxIndex];
+			m[maxIndex] = temp;	
+		}
+	} // selectSortDesc
+
+
+2. 년, 월, 일을 입력받아서 요일을 반환하는 getDayOfWeek() 메서드를 선언하세요 . 
+ 
+		Scanner scanner = new Scanner(System.in);
+		
+        System.out.print("년을 입력하세요: ");
+        int year = scanner.nextInt();
+        System.out.print("월을 입력하세요: ");
+        int month = scanner.nextInt();
+        System.out.print("일을 입력하세요: ");
+        int day = scanner.nextInt();
+		
+        String dayOfWeek = getDayOfWeek(year, month, day);
+        System.out.println("입력한 날짜의 요일은: " + dayOfWeek);
+
+	} // main
+
+	private static String getDayOfWeek(int year, int month, int day) {
+		LocalDate date = LocalDate.of(year, month, day);
+		DayOfWeek dayofWeek = date.getDayOfWeek();
+		return dayofWeek.toString();
+	} // getDayOfWeek
+ 
+3. 년, 월을 입력받아서 마지막 날짜(일)을 반환하는 getLastDay() 메서드를 선언하고 
+   2025년의  1월 ~ 12월 까지의 마지막 날짜를 출력하는 코딩을 하세요 ..  
+   예) 2025년 1월 : 31일
+   	  2025년 2월 : 28일
+   	   :
+   	  2025년 12월 : 31일
+   	   
+       public static void main(String[] args) {
+        int year = 2025;
+
+        // 1월부터 12월까지 반복
+        for (int month = 1; month <= 12; month++) {
+            int lastDay = getLastDay(year, month);
+            System.out.printf("%d년 %d월 : %d일%n", year, month, lastDay);
+        }
+	} // main
+
+    private static int getLastDay(int year, int month) {
+        YearMonth yearMonth = YearMonth.of(year, month);	
+        return yearMonth.lengthOfMonth();
+    } // getLastDay
+    
+    
+    
+    
+    
+    
+   
+   
