@@ -14,13 +14,12 @@ public class Ex04 {
 	public static void main(String[] args) {
 		// 1. Calendar -> Date 변환
 
-		// [1]
-		// Date d = new Date(long ms);
 //		Calendar c = Calendar.getInstance();
+		
+		// [1] // Date d = new Date(long ms);
 //		Date d = new Date (c.getTimeInMillis() );
 		
 		// [2]
-//		Calendar c = Calendar.getInstance();
 //		Date d = c.getTime();
 		
 		

@@ -32,9 +32,9 @@ public class Ex05 {
 //		DecimalFormat df = new DecimalFormat(pattern);
 //		System.out.println(df.format(money));
 		
-		// 화폐단위 붙이고, 천자리마다 콤마붙이고, 소수점은 무조건 2자리까지 출력~
+		// [문제] 화폐단위 붙이고, 천자리마다 콤마붙이고, 소수점은 무조건 2자리까지 출력~
 		double money = 3257600.8;
-		String pattern = "\\#,###.00";
+		String pattern = "\u00A4 #,###.00";
 		DecimalFormat df = new DecimalFormat(pattern);
 		System.out.println(df.format(money));
 		
