@@ -36,12 +36,12 @@ public class Ex06_02 {
 		}
 
 		// [1] 
-//		int year =   Integer.parseInt(  s.substring(0, 4)  ); // 2023
-//		int month =   Integer.parseInt(  s.substring(5, 7)  ); // 01
-//		int day =   Integer.parseInt(  s.substring(8, 10)  ); // 20
-//		
-//		Calendar c  = new GregorianCalendar(year, month-1, day);
-//		Date d = new Date(year-1900, month-1, day);		
+		int year =   Integer.parseInt(  s.substring(0, 4)  ); // 2023
+		int month =   Integer.parseInt(  s.substring(5, 7)  ); // 01
+		int day =   Integer.parseInt(  s.substring(8, 10)  ); // 20
+		
+		Calendar c  = new GregorianCalendar(year, month-1, day);
+		Date d = new Date(year-1900, month-1, day);		
 		
 	} // main
 	

@@ -21,22 +21,26 @@ public class Ex10_02 {
 		// 시
 		int hour = t.getHour();
 		hour = t.get(ChronoField.HOUR_OF_DAY);
+		System.out.println( hour );
 		
 		// 분
 		int min = t.getMinute();
 		min = t.get(ChronoField.MINUTE_OF_HOUR);
-
+		System.out.println( min );
+		
 		// 초
 		int sec = t.getSecond();
 		sec = t.get(ChronoField.SECOND_OF_MINUTE);
+		System.out.println( sec );
 		
 		// 밀리초
 		int ms = t.get(ChronoField.MILLI_OF_SECOND);
+		System.out.println( ms );
 		
 		// 나노초
 		int ns = t.getNano();
 		ns = t.get(ChronoField.NANO_OF_SECOND);
-		
+		System.out.println( ns );
 		
 		
 	} // main

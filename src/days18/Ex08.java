@@ -30,15 +30,14 @@ public class Ex08 {
 		// [2]
 		String pattern = "이름:{0}, 나이:{1}, 성별:{2}";
 		
+		// [2-1]
+		MessageFormat mf = new MessageFormat(pattern);
+		String str = mf.format(new Object[] { name, age, gender?"남자":"여자" } );
+		System.out.println( str );		
 		
-		// [1]
-//		MessageFormat mf = new MessageFormat(pattern);
-//		String str = mf.format(new Object[] { name, age, gender?"남자":"여자" } );
-//		System.out.println( str );		
-		
-		// [2]
-		String str = MessageFormat.format(pattern, name, age, gender?"남자":"여자");
-		System.out.println( str );	
+		// [2-2]
+//		String str = MessageFormat.format(pattern, name, age, gender?"남자":"여자");
+//		System.out.println( str );	
 		
 	} // main
 

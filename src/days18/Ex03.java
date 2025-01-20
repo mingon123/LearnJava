@@ -22,17 +22,17 @@ public class Ex03 {
 		
 		
 		// [1] Date 
-//		Date d = new Date(2025-1900, 5-1, 1);
-//		System.out.println( d.toLocaleString() );
-//		d.setMonth( d.getMonth() + 1 );	// 한달 더함
-//		System.out.println( d.toLocaleString() );
-//		d.setDate( d.getDate() - 1 );	// 6월 1일에서 1일 빼서 5월 마지막날 가져옴
-//		System.out.println( d.toLocaleString() );
-//		System.out.println( d.getDate() );
+		Date d = new Date(2025-1900, 5-1, 1);
+		System.out.println( d.toLocaleString() );
+		d.setMonth( d.getMonth() + 1 );	// 한달 더함
+		System.out.println( d.toLocaleString() );
+		d.setDate( d.getDate() - 1 );	// 6월 1일에서 1일 빼서 5월 마지막날 가져옴
+		System.out.println( d.toLocaleString() );
+		System.out.println( d.getDate() );
 		
 		
 		// [2] Calendar
-//		Calendar c = new GregorianCalendar(2025, 5-1, 21);
+//		Calendar c = new GregorianCalendar(2025, 5-1, 1);
 //		c.add(Calendar.MONTH, 1); // 한달 더함
 //		c.add(Calendar.DATE, -1); // 하루 뺌
 //		System.out.println(c.get(Calendar.DATE));

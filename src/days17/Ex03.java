@@ -7,7 +7,7 @@ package days17;
  * @content 
 
 		String -> 불변
-		StringBuffer(동기화X) / StringBuilder(동기화O)
+		StringBuffer(동기화O) / StringBuilder(동기화X)
  */
 public class Ex03 {
 

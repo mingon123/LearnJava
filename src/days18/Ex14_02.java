@@ -29,7 +29,7 @@ public class Ex14_02 {
 		System.out.println("-".repeat(50));
 		
 		// 오늘 아침에 수업 시작한지 지금 몇초가 지났니?
-		LocalTime s = LocalTime.of(9, 0);
+		LocalTime s = LocalTime.of(0, 0);
 		LocalTime t = LocalTime.now();
 		Duration d = Duration.between(s, t);
 		System.out.println( d ); // PT 8H 24M 16.0451454S -< PT 8시간 24분 16초
