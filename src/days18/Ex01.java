@@ -38,7 +38,7 @@ public class Ex01 {
 		// 년
 		System.out.println( d.getYear() + 1900 );
 		// 월
-		System.out.println( d.getMonth() + 1 );
+		System.out.println( d.getMonth() + 1 ); // 0~11
 		// 일
 		System.out.println( d.getDate() );
 		// 시간
@@ -46,10 +46,10 @@ public class Ex01 {
 		// 분
 		System.out.println( d.getMinutes() );
 		// 초
-		System.out.println( d.getSeconds());
+		System.out.println( d.getSeconds()); // getter
 		// 밀리초 X. 없음
 		// 요일
-		System.out.println( "일월화수목금토".charAt( d.getDay() ) );	// getter
+		System.out.println( "일월화수목금토".charAt( d.getDay() ) );	 // 1
 		
 		// d.after(Date when); // 오늘날짜가 이 날짜보다 이후니? boolean형으로 반환
 		// d.before(Date when); // 오늘날짜가 이 날짜보다 전이니? boolean형으로 반환

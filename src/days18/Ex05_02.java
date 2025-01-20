@@ -24,7 +24,6 @@ public class Ex05_02 {
 		// [2] DecimalFormat
 		// 숫자 -> 형식화된 문자열 변환 : format() 메서드 
 		// 형식화된 문자열 -> 숫자 변환 : parse() 메서드 
-		
 		String pattern = "#,###";
 		DecimalFormat df = new DecimalFormat(pattern);
 		try {

@@ -19,7 +19,8 @@ public class Ex07 {
 		
 		int [] kors = { 100, 57, 95, 88, 77, 80, 0 };
 		
-		// [1]				낮은 값부터 범위
+		// [1]				
+		//					낮은 값부터 범위
 //		double [] limits = {0, 60, 70, 80, 90}; 
 //		String [] formats = {"가", "양", "미", "우", "수"};
 //		ChoiceFormat cf = new ChoiceFormat(limits, formats);

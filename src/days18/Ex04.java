@@ -16,7 +16,8 @@ public class Ex04 {
 
 //		Calendar c = Calendar.getInstance();
 		
-		// [1] // Date d = new Date(long ms);
+		// [1] 
+		// Date d = new Date(long ms);
 //		Date d = new Date (c.getTimeInMillis() );
 		
 		// [2]

@@ -34,8 +34,6 @@ public class Ex08_03 {
 			e.printStackTrace();
 		}
 		
-		
-		
 		System.out.println(name);
 		System.out.println(age);
 		System.out.println(gender);

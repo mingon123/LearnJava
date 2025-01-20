@@ -13,7 +13,7 @@ public class Ex02_02 {
 
 	public static void main(String[] args) {
 		
-		// Calendar 사용해서 수료일 무슨요일인지 출력
+		// [Calendar] 사용해서 수료일 무슨요일인지 출력
 		// 수료일 : 25.7.21
 		
 //		Calendar c = Calendar.getInstance();

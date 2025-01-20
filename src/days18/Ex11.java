@@ -33,7 +33,7 @@ public class Ex11 {
 		d = d.withMonth(12);
 		d = d.withDayOfMonth(23);
 	
-		d = d.with(ChronoField.DAY_OF_MONTH, 23);	// 이걸로도 됨
+//		d = d.with(ChronoField.DAY_OF_MONTH, 23);	// 이걸로도 됨
 		*/
 
 		/*
@@ -53,27 +53,27 @@ public class Ex11 {
 		
 		LocalDate d = LocalDate.now();
 		
-		LocalDate A = LocalDate.of(2025, 1, 15);
-		LocalDate B = LocalDate.of(2025, 1, 20);
-		LocalDate C = LocalDate.of(2025, 12, 15);
+		LocalDate aBirth = LocalDate.of(2025, 1, 15);
+		LocalDate bBirth = LocalDate.of(2025, 1, 20);
+		LocalDate cBirth = LocalDate.of(2025, 12, 15);
 
 		// boolean 형 반환
-		System.out.println( d.isAfter(A) );
-		System.out.println( d.isBefore(A) );
-		System.out.println( d.isEqual(A) );
+		System.out.println( d.isAfter(aBirth) );
+		System.out.println( d.isBefore(aBirth) );
+		System.out.println( d.isEqual(aBirth) );
 		
-		System.out.println( d.isAfter(B) );
-		System.out.println( d.isBefore(B) );
-		System.out.println( d.isEqual(B) );
+		System.out.println( d.isAfter(bBirth) );
+		System.out.println( d.isBefore(bBirth) );
+		System.out.println( d.isEqual(bBirth) );
 		
-		System.out.println( d.isAfter(C) );
-		System.out.println( d.isBefore(C) );
-		System.out.println( d.isEqual(C) );
+		System.out.println( d.isAfter(cBirth) );
+		System.out.println( d.isBefore(cBirth) );
+		System.out.println( d.isEqual(cBirth) );
 
 		// int 형 반환
-		System.out.println( d.compareTo(A) );
-		System.out.println( d.compareTo(B) );
-		System.out.println( d.compareTo(C) );
+		System.out.println( d.compareTo(aBirth) );
+		System.out.println( d.compareTo(bBirth) );
+		System.out.println( d.compareTo(cBirth) );
 		
 		
 		

@@ -13,6 +13,8 @@ public class Ex01_02 {
 	public static void main(String[] args) {
 		// [문제] Date 클래스 사용해서 개강일 24/12/23 이 무슨 요일 ? 월요일
 		// Date 날짜 객체 생성 -> getDay() 메서드 호출
+		// 개강일 24/12/23이 무슨 요일 ? 월요일
+		// Date 날짜 객체를 생성 -> getDay() 메서드 호출		
 		
 		// [1]
 //		Date d = new Date();

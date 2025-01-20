@@ -22,6 +22,7 @@ public class Ex10 {
 		// 년
 		int year = d.getYear();
 		year = d.get(ChronoField.YEAR);
+		System.out.println( year );
 		
 		// 월
 		// [e]num 열거형
@@ -34,6 +35,7 @@ public class Ex10 {
 		// 일
 		int day = d.getDayOfMonth();
 		day = d.get(ChronoField.DAY_OF_MONTH);
+		System.out.println(day);
 		
 		// 요일
 		DayOfWeek dow = d.getDayOfWeek(); // 리턴자료형 DayOfWeek(열거형)

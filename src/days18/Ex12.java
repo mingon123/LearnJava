@@ -39,7 +39,7 @@ public class Ex12 {
 		
 		// 2025-01-20T16:34:39.100268600
 		// 시간부터 분/초/밀리초/나노초 절삭
-		dt = dt.truncatedTo(ChronoUnit.DAYS);	
+		dt = dt.truncatedTo(ChronoUnit.DAYS); // 원하는 곳 앞까지 출력
 		System.out.println( dt );
 		
 		*/

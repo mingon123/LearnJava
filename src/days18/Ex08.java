@@ -22,18 +22,22 @@ public class Ex08 {
 		String name = "홍길동";
 		int age = 20;
 		boolean gender = false;
+		
+		// [1]
 //		String str = String.format("이름:%s, 나이:%d, 성별:%s", name, age, gender?"남자":"여자");
 //		System.out.println( str );
 		
 		// [2]
 		String pattern = "이름:{0}, 나이:{1}, 성별:{2}";
+		
+		
+		// [1]
 //		MessageFormat mf = new MessageFormat(pattern);
-//		mf.format(new Object[] { name, age, gender?"남자":"여자" } );
-//		String str = String.format("이름:%s, 나이:%d, 성별:%s", name, age, gender?"남자":"여자");
+//		String str = mf.format(new Object[] { name, age, gender?"남자":"여자" } );
 //		System.out.println( str );		
 		
-		// [3]
-		String str = String.format(pattern, name, age, gender?"남자":"여자");
+		// [2]
+		String str = MessageFormat.format(pattern, name, age, gender?"남자":"여자");
 		System.out.println( str );	
 		
 	} // main
