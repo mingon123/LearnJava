@@ -15,7 +15,7 @@ import java.util.Vector;
 		StringBuffer/StringBuilder 차이점
 			동기화 처리 여부
  */
-public class Ex07 {
+public class Ex07 { 
 
 	public static void main(String[] args) {
 		Vector v = new Vector();

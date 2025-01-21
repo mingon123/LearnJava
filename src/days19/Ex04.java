@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 public class Ex04 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 //		1조 : 박정현, 김하은, 김민곤, 박예진, 양희동(3)
 //		2조 : 주정호, 최지우, 김대원, 이찬희, 라일락(1)
 //		3조 : 윤형식, 오재문, 박세훈, 유예나, 권용범(2)

@@ -14,7 +14,7 @@ import days11.Student;
  * 
 ArrayList로 학생정보 출력 최적화
  */
-public class Ex05 {
+public class Ex05 { 
 
 	public static void main(String[] args) throws IOException {
 		// 한 반에 30명 학생들의 이/국/영/수/총/평/등 관리(입력, 등수처리, 출력)
