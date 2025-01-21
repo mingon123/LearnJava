@@ -11,7 +11,7 @@ import java.util.function.Predicate;
 ArrayList 컬렉션 클래스
 1. 가장 많이 사용되는 컬렉션 클래스
 2. List 인터페이스를 구현한 클래스
-	( 순서유지O, 중복허용O)
+	( 순서유지O, 중복허용O )
 
 
  */
@@ -30,23 +30,23 @@ public class Ex03 {
 		// <E> , <? extends E> : 제네릭( Generics ) - 아직 안배움
 		ArrayList list = new ArrayList (3); // 값을 안주면(디폴트 생성자) 10개짜리 방. 크기를 증가시키려면 값을 할당하면 됨 - 자동으로 증가하기 때문에 줄 필요없음
 		
-//		System.out.println( list.isEmpty() ); // 요소가 있는지 없는지 유무확인. true
+		System.out.println( list.isEmpty() ); // 요소가 있는지 없는지 유무확인. true
 		list.add("박정현");	// 특징 : 중복허용O, 순서대로 추가
 		list.add("박예린");
 		list.add("양희동");
-//		System.out.println( list.add("박정현") );	// true, 순서대로 추가됨..
+		System.out.println( list.add("박정현") );	// true, 순서대로 추가됨..
 		list.add("김대원"); // 배열과 다르게 자동으로 크기가 증가
 //		System.out.println( list.isEmpty() ); // 요소가 비어있니? false
 		
-		list.add(2, "주종오");	// 자리값 지정 가능
+		list.add(2, "주종오");	// 자릿값 지정 가능
 		// [박예린, 양희동, 주종오, 김대원] : toString을 오버라이딩
 		System.out.println( list );
 		System.out.println( list.size() ); // 요소의 갯수
 		list.trimToSize(); // 뒤에 남는(할당되지 않은) 방 삭제
 		
 		// boolean 있다/없다 확인
-//		System.out.println(list.contains("이찬희"));
-//		System.out.println(list.contains("주종오"));
+		System.out.println(list.contains("이찬희"));
+		System.out.println(list.contains("주종오"));
 		
 		
 		// "주종오" -> "이찬희" : 자리찾고 학생 변경

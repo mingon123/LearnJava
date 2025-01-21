@@ -13,7 +13,7 @@ package days19;
 		
 	특징 : 순서유지O				순서유지X				엔트리(Entry) : key+value 한쌍
 		  중복허용O				중복허용X				순서유지X
-		  											키(key)중복허용X 값(value)중복허
+		  											키(key)중복허용X 값(value)중복허용O
 	컬렉션 클래스													
 		ArrayList				HashSet				HashMap
 		LinkedList				TreeSet				HashTable

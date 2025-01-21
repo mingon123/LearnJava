@@ -9,8 +9,8 @@ import java.time.format.DateTimeFormatter;
  * @date 2025. 1. 20. - 오후 5:28:07
 
 		컬렉션 프레임워크
-        D, C
- 		j, t
+        Date, Calendar
+ 		java.time
         DateTimeFormatter 형식화 클래스
  */
 public class Ex01 {
