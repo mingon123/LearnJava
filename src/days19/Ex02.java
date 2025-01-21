@@ -4,7 +4,7 @@ package days19;
  * 
 컬렉션 프레임워크( collection Framework) == JCF
 1. 프레임워크( Framework) - 표준화 체계(틀, 뼈대, 체제)
-2. 컬렉션( Collection) - 집합(군)
+2. 컬렉션( Collection) - 데이터 집합(군)
 3. 컬렉션 프레임워크 - 데이터 집합을 저장(관리 - 추가,삭제,수정,검색 등)하는 클래스들을 표준화 체계
 4. 컬렉션 프레임워크의 핵심 인터페이스(3가지 타입)
 				Collection 인터페이스					Map 인터페이스

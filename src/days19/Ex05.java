@@ -19,7 +19,7 @@ public class Ex05 {
 	public static void main(String[] args) throws IOException {
 		// 한 반에 30명 학생들의 이/국/영/수/총/평/등 관리(입력, 등수처리, 출력)
 		
-		// 지금까지 배운 내용 변천사
+		// 지금까지 배운 내용 순서..
 		// 1. days09.Ex04.java	->	String [] names, int[] kors...
 		// 2. days11.Ex10.java 	->  Student [] students = new Student[30]
 		// 클래스 배열 선언 + 사용
@@ -35,14 +35,14 @@ public class Ex05 {
 		String name;
 		int kor, eng, mat, tot, rank;
 		double avg;
-		Student student;
+		Student student = null;
 		
 		Scanner scanner = new Scanner(System.in);
 		
 		do {
 			// 
 			System.out.print("> 이름 국어 영어 수학 정보 입력 ? ");
-			name = getName() ; //scanner.next();
+			name = getName() ; //  scanner.next();
 			kor = getScore(); //   scanner.nextInt();
 			eng = getScore(); //   scanner.nextInt();
 			mat = getScore(); //   scanner.nextInt();
@@ -77,11 +77,10 @@ public class Ex05 {
 		
 		for (int i = 0; i < cnt; i++) {
 			student = (Student) list.get(i);
-			
+			student.rank = 1;	
 			// 비교할 모든 학생과 관련된 for문
 			for (int j = 0; j < cnt; j++) {
 				비교학생 = (Student)list.get(j);
-				
 				if ( student.tot < 비교학생.tot )	student.rank++;
 			}
 		}
@@ -89,9 +88,9 @@ public class Ex05 {
 		
 		// 출력...
 		// [1]
-		for (int i = 0; i < list.size(); i++) {
+		for (int i = 0; i < cnt; i++) {
 			student = (Student) list.get(i);
-			System.out.printf("[%d]번\t%s\n",  i+1, student.toString());
+			System.out.printf("[%d]번\t%s\n",  i+1, student );
 		} // for
 		
 		// [2] [iterator 반복자 사용 출력]

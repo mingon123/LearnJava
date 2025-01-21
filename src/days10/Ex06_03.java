@@ -19,7 +19,7 @@ import days07.Ex05_03;
 public class Ex06_03 {
 
 	public static void main(String[] args) {
-		// 로또게임
+		// 로또 게임
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("> 게임 횟수 입력 ? ");
 		int gameNumber = scanner.nextInt();

@@ -30,7 +30,7 @@ public class Ex08_02 {
 		}
 		
 		// list.remove(); 중복선언
-		// 첫번째 일치하는 객체를 삭제
+		// 첫번째 일치하는 객체를 삭제 - removeFirstOccurrence()
 		list.removeFirstOccurrence("홍길동"); 
 		
 		System.out.println( list );

@@ -27,7 +27,7 @@ public class Ex03 {
 		// 위에 대신에 ArrayList를 사용 - 배열의 단점들이 다 없어짐 : 크기증가X 등등..
 		
 		// <E> : E == Element == 요소
-		// <E> , <? extends E> : 제네릭( Generics ) X
+		// <E> , <? extends E> : 제네릭( Generics ) - 아직 안배움
 		ArrayList list = new ArrayList (3); // 값을 안주면(디폴트 생성자) 10개짜리 방. 크기를 증가시키려면 값을 할당하면 됨 - 자동으로 증가하기 때문에 줄 필요없음
 		
 //		System.out.println( list.isEmpty() ); // 요소가 있는지 없는지 유무확인. true
@@ -85,7 +85,7 @@ public class Ex03 {
 //		}
 		
 		// [3] removeIf
-		// <T> Type : 여기서는 String 형이라 String 사용
+		// <T> : Type - 여기서는 String 형이라 String 사용
 //		list.removeIf( new Predicate<String>() {
 //
 //			@Override

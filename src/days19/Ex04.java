@@ -52,8 +52,7 @@ public class Ex04 {
 		// a,b,c,d	// team1
 		//   b,c,d,g// team2
 		// team1.retainAll(team2); // b,c,d만 남음
-//		team1.retainAll(team2);
-		
+
 		
 		// [모든 classE 요소를 출력]
 		// [1]

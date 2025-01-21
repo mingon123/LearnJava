@@ -25,6 +25,7 @@ public class Ex06 {
 //		System.out.println( list );
 		
 		// [2] String[] -> List
+		//					ArrayList
 		List list = Arrays.asList(names);
 		// list.get(0)
 		// list.size();
@@ -38,7 +39,7 @@ public class Ex06 {
 		// 2. ArrayList -> String[] 변환
 		
 		// [1]
-//		ArrayList list2 = new ArrayList(list); // 매개변수 다형성, 생성자
+//		ArrayList list2 = new ArrayList(list);
 //		String [] names2 = new String[ list2.size() ];
 //		int index = 0;
 //		Iterator ir = list2.iterator();

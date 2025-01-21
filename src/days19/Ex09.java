@@ -29,6 +29,7 @@ public class Ex09 {
 		System.out.println( s.pop() );
 		System.out.println( s.pop() );
 		*/
+		System.out.println( s.size() );
 		
 		// [1]
 		int len = s.size();

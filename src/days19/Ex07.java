@@ -61,7 +61,7 @@ public class Ex07 {
 		
 		// v.insertElementAt("홍순기", 2); == v.add(2, "홍순기");
 		
-		// trimToSize()로 줄이고, v.setSize()로 늘림. 원래 값은 유지한채로
+		// trimToSize()로 방을 줄이고, v.setSize()로 방을 늘림. 원래 값은 유지한채로
 		v.setSize(10);
 		
 		
