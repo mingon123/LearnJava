@@ -38,7 +38,7 @@ public class Ex13 {
 		
 		
 		// [문제] 이번달 마지막 토요일 언제?
-		d = d.with( TemporalAdjusters.lastInMonth(DayOfWeek.SATURDAY));
+		d = d.with( TemporalAdjusters.lastInMonth(DayOfWeek.SATURDAY) );
 		System.out.println( d );
 		
 	} // main

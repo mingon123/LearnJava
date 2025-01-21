@@ -52,7 +52,7 @@ public class Ex14 {
 		// System.out.println(hour);
 		
 		System.out.println( d.getSeconds() );
-		System.out.println( d.get(ChronoUnit.SECONDS) );
+//		System.out.println( d.get(ChronoUnit.SECONDS) );
 		
 		System.out.println( d.getNano() );
 		

@@ -14,6 +14,7 @@ public class Ex08_02 {
 		
 		String name;
 		int age;
+		
 		boolean gender;
 		
 //		name = source.substring(3, 6);
