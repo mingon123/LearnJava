@@ -40,7 +40,7 @@ public class Ex01_02 {
 		System.out.println(ld);
 		
 		
-		
+		// format, parse 기억
 		
 		
 	} // main

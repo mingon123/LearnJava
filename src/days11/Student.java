@@ -15,4 +15,15 @@ public class Student {
 					, avg, rank, wrank);
 	}
 
+	// alt+shift+s로 toString 추가
+	@Override
+	public String toString() {
+		return String.format("%s\t%d\t%d\t%d\t%d\t%.2f\t%d\t%d"					
+				, name
+				, kor, eng, mat, tot
+				, avg, rank, wrank);
+	}
+	
+	
+
 }

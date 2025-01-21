@@ -33,6 +33,8 @@
 	} // selectSortDesc
 
 
+
+
 2. 년, 월, 일을 입력받아서 요일을 반환하는 getDayOfWeek() 메서드를 선언하세요 . 
  
 		Scanner scanner = new Scanner(System.in);
@@ -54,6 +56,8 @@
 		DayOfWeek dayofWeek = date.getDayOfWeek();
 		return dayofWeek.toString();
 	} // getDayOfWeek
+ 
+ 
  
 3. 년, 월을 입력받아서 마지막 날짜(일)을 반환하는 getLastDay() 메서드를 선언하고 
    2025년의  1월 ~ 12월 까지의 마지막 날짜를 출력하는 코딩을 하세요 ..  
