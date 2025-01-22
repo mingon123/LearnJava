@@ -1,0 +1,177 @@
+1. 오류메시지에 대한 설명을 하세요 .
+ㄱ. The local variable age may not have been initialized
+  - 지역 변수가 초기화 되지 않음 
+
+ㄴ. age cannot be resolved to a variable
+  - 변수가 선언되지 않음
+
+ㄷ. The left-hand side of an assignment must be a variable  
+  - 대입 연산의 왼쪽은 반드시 변수여야 함 - 왼쪽에 변수가 아닌 상수, 자료형 등이 온 경우
+
+ㄹ. Type mismatch: cannot convert from int to boolean
+  - 우측과 좌측의 데이터 타입이 서로 맞지 않음
+
+ㅁ. Duplicate local variable age
+  - 중복선언됨
+
+-  오류났을 때 - 고친 방법: 오류메시지를 확인하고 고침
+
+
+
+2. 지역변수( Local Variable ) 에 대해서 설명하세요.
+- 메서드, 생성자, 블록 내에서 선언된 변수   
+
+
+
+3. 자료형( Data Type )에 대해서 설명하세요.
+1) 정의: 저장할 공간의 크기와 저장 형식을 정의
+
+2) 종류: 
+  1) 기본 자료형(Primivite Types)
+      (1) 숫자형
+          ㄱ. 정수형: Byte(1) Short(2) [Int(4) 기본형] long(8)
+                              Char(2)                        			
+          ㄴ. 실수형 : Float(4) [Double(8) 기본형]
+      (2) 논리형: boolean(1) - true, false
+  2) 참조 자료형(Reference Types) : 배열, 클래스, 인터페이스
+
+
+
+
+4. 이름, 나이, 학점, 성별 관련 변수를 선언 및 초기화하고, 출력하세요.
+조건1) printf() 메서드 사용
+조건2) 출력 형식은 ">이름:"홍길동", 나이:20, 학점:'A', 성별:true" 
+	public static void main(String[] args) {
+		
+		String name = "홍길동";
+		Byte age = 20;
+		char grade = 'A';
+		boolean gender = true;
+		
+		System.out.printf(">이름: %s, 나이: %d, 학점: %c, 성별: %b", name, age, grade, gender);
+
+	}
+
+
+
+
+5. 두 정수 x, y 변수를 선언하고 각각 1, 2로 초기화하고 출력하고, 두 값을 교환하고 x, y 값을 출력하는 코딩을 하세요.
+	public static void main(String[] args) {
+		
+		int x = 1, y = 2;
+		System.out.printf("%d, %d \n", x, y);
+		
+		{
+		int temp = x;
+		x = y;
+		y = temp;
+		}
+		
+		System.out.printf("%d, %d \n", x, y);
+	}
+
+
+
+
+6. + 연산 결과를 적으세요.
+  ㄱ. 3 + 5 +  0  =  8
+  ㄴ. 3 + 5 + "0" = "80"
+  ㄴ. 3 + 5 + '0' =  56
+
+
+
+
+7. 나이와 국어점수를 저장할 변수를 선언하세요 ...
+	public static void main(String[] args) {
+		
+        //0~120 정수, 0~100 정수는 byte로 하기로 약속
+		byte age,kor;
+
+		}     
+
+
+
+
+8. 개행( 줄바꿈 ) 하는 코딩을 모두 적으세요.
+  ㄱ.  System.out.println();
+  ㄴ.  '\n' 제어문자
+
+
+
+
+9. 이름을 표준입력장치(키보드)로 부터 입력받아서 출력하는 코딩을 하세요.
+ [입력형식]
+ > 이름을 입력하세요 ? _
+ 
+ [출력형식]
+ > 이름은 "홍길동"입니다.
+	public static void main(String[] args) throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.printf(">이름을 입력하세요 ? ");
+		
+		String name = br.readLine();
+		
+		System.out.printf("이름은 %s 입니다", name);
+	
+	}
+
+
+
+
+10. printf(String format, Object...args) 함수의 String format 매개변수의 %Conversion 에 대해서 적으세요.
+  ㄱ. String 일 때 사용하는 Conversion : s 
+  ㄴ. char 일 때 사용하는 Conversion :   c C
+  ㄷ. boolean 일 때 사용하는 Conversion :  b B
+  ㄹ. byte, short, int, long 일 때 사용하는 Conversion :   d o x
+  ㅁ. float, double 일 때 사용하는 Conversion :  f e g a
+
+
+
+
+11. double money = 1234569.70891) 소수점 2자리까지 출력, 세 자리마다 콤마(,) 출력하는 코딩을 하세요 .
+	public static void main(String[] args) {
+
+		double money = 1234569.7089;
+		
+		System.out.printf("%,.2f", money);
+		
+	
+	}
+
+
+
+
+12. a 변수의 값을 대문자로 변환시켜서 b 변수에 저장 후 출력하는 코딩을 하세요.
+조건2: char a = 'x'; 
+조건2: char b;  
+	public static void main(String[] args) {
+
+		char a = 'x';
+		char b;
+		
+		b = (char)(a - 32);
+		
+		System.out.println(b);
+	
+	}
+
+
+
+
+13. 국어 점수를 입력받아서 입력받은 국어 점수를 출력하는 코딩을 하세요.
+	public static void main(String[] args) throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.printf(">국어 점수를 입력하세요 ? ");
+		
+		byte kor = Byte.parseByte(br.readLine());
+		
+		System.out.printf("국어 점수는 %d 입니다", kor);
+	
+	}
+
+- 함수(메서드) 3가지 파악 1) 기능 2) 매개변수 3) 리턴값(자료형) 
+- String -> byte 형(type) 변환 -> kor = Byte.parseByte(br.readLine());

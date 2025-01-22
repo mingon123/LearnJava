@@ -51,7 +51,6 @@ class Student {
 	
 	public Student() {
 		super();
-		
 	}
 
 
@@ -72,7 +71,7 @@ class Student {
 	// s1, s3 같아짐 
 	@Override
 	public int hashCode() {
-		// return Integer.parseInt(this.no);
+		// return Integer.parseInt(this.no);	// 둘이 같음
 		return this.no.hashCode();
 	}
 

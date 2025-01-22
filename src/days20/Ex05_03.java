@@ -16,6 +16,8 @@ public class Ex05_03 {
 		int [] score = { 80, 95, 50, 85, 45, 65, 10, 100 };
 		
 		// [범위 검색]
+		
+		
 		TreeSet<Integer> ts = new TreeSet<Integer>();
 		for (int i  : score) ts.add(i);	// foreach
 

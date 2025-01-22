@@ -41,17 +41,50 @@ public class Ex06 {
 		
 		// [문제] key값이 "admin" 이름 출력해보고, "김대원"으로 수정
 		
-		System.out.println(hm.containsKey("admin"));
+		String key = "admin";
+		if ( hm.containsKey(key) ) {
+			String value = hm.get(key);
+//			System.out.println( value );
+			hm.put(key, "김대원");	// put으로도 값을 바꿀 수 있음
+//			hm.replace(key, value, "김대원");
+		}	
+		System.out.println( hm );
+		System.out.println( hm.get(key) );
 		
-		while ( !hm.isEmpty() ) {
-			hm.get("admin");
-			System.out.println(hm.get("admin"));
-			
-			hm.replace("admin", "김대원");
-			System.out.println( hm );
-			
-			break;
-		}
+		
+		// 다른 함수들 살펴보기
+		
+		// hm.clear();
+		// boolean hm.containsValue("홍길동") value값 있는지 확인
+		
+		// ***hm.entrySet();
+		//	  hm.keySet();
+		//	  hm.values();	// key값은 중복안되는데 value는 중복되기 때문에 Set이 아닌 values
+		
+		
+		// hm.equals(key);
+		
+		// value hm.get(key)
+		
+		// hm.isEmpty()
+		
+		// hm.wait(); // 쓰레드에서 사용
+		
+		// hm.size() 
+		
+		// hm.replace(key, key);
+		
+		// hm.remove(key);
+		// hm.remove(key, value);
+		
+		// hm.replace(null, null);
+		
+		// 병합
+		// hm.merge(key, key, null)
+
+		
+		System.out.println( hm );
+		
 		
 	} // main
 
