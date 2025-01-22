@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter;
 
 		컬렉션 프레임워크
         Date, Calendar
- 		java.time
+ 		j, 	  t
         DateTimeFormatter 형식화 클래스
  */
 public class Ex01 {
