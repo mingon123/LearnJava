@@ -2,6 +2,7 @@ package days20;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedHashSet;
 
 /**
@@ -51,10 +52,30 @@ public class Ex04 {
 		
 		
 		// [문제2] a - b 차집합
+
+//		HashSet<Integer> hs = new HashSet<Integer>();
+//		for (int i : a) {
+//			hs.add(i);
+//		} // foreach
+//	
+//		for (int i : b) {
+//			hs.remove(i);
+//		} // foreach
+//		System.out.println(hs);
+		
+		
 		// [문제3] a n b 교집합
 	
-	
-	
-	}
 
-}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	} // main
+
+} // class

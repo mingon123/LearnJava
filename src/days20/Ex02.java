@@ -1,5 +1,6 @@
 package days20;
 
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
@@ -48,26 +49,28 @@ public class Ex02 {
 		
 		
 		// [2] HashSet 사용
-		/*
-		HashSet<Integer> set = new HashSet<Integer>();
-		int rnd;
-		for (int i = 0; i < 5; i++) {
-			int col = 0;
-			while( col < 5 ) {
-				rnd = (int)(Math.random()*25)+1;
-				if (set.add(rnd)) {
-					bingo[i][col] = rnd;
-					col++;
-				}	
-			}
-		}
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                System.out.print(bingo[i][j] + "\t");
-            }
-            System.out.println();
-        }
-		*/
+
+//		HashSet<Integer> set = new HashSet<Integer>();
+//		int rnd;
+//		for (int i = 0; i < 5; i++) {
+//			int col = 0;
+//			while( col < 5 ) {
+//				rnd = (int)(Math.random()*25)+1;
+//				if (set.add(rnd)) {
+//					bingo[i][col] = rnd;
+//					col++;
+//				}	
+//			}
+//		}
+//		
+//		// 출력
+//        for (int i = 0; i < 5; i++) {
+//            for (int j = 0; j < 5; j++) {
+//            	System.out.printf("[%02d]" ,bingo[i][j]);
+//            }
+//            System.out.println();
+//        }
+
 		
 		
 		// [3] HashSet 사용안했을 때 , 메서드 추가했는데 여기는 코드 없음

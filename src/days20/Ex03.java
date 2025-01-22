@@ -84,9 +84,6 @@ class Student {
 		}
 		return false;
 	}
-	
-	
 
-	
 }
 
