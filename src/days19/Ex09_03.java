@@ -19,7 +19,7 @@ public class Ex09_03 {
 		
 		q.pollFirst();
 		q.pollLast();
-		
+
 		
 		
 		

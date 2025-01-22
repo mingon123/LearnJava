@@ -51,15 +51,15 @@ public class Ex04 {
 		// 리턴값(리턴자료형) : boolean
 		// a,b,c,d	// team1
 		//   b,c,d,g// team2
-		// team1.retainAll(team2); // b,c,d만 남음
+//		 team1.retainAll(team2); // b,c,d만 남음
 
 		
 		// [모든 classE 요소를 출력]
 		// [1]
-//		for (int i = 0; i < classE.size(); i++) {
-//			String name = (String) classE.get(i);
-//			System.out.println( name );
-//		}
+		for (int i = 0; i < classE.size(); i++) {
+			String name = (String) classE.get(i);
+			System.out.println( name );
+		}
 
 		// [2] *** iterator() 메서드 : 반복자
 		// 반복자

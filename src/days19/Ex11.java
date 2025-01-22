@@ -1,6 +1,7 @@
 package days19;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 
 /**2025. 1. 21. - 오후 3:49:28
@@ -40,12 +41,13 @@ public class Ex11 {
 		});
 		
 		
-		// Arrays.sort(m, Collections.reverseOrder());
 		
 		// 대소문자를 구분하지 않고 오름차순 정렬..
-		Arrays.sort(m, String.CASE_INSENSITIVE_ORDER);
+//		Arrays.sort(m, String.CASE_INSENSITIVE_ORDER);
 		
 		// 대소문자를 구분하지 않고 내림차순 정렬..
+//		Arrays.sort(m, Collections.reverseOrder());
+		
 		// [tiger, lion, dog, cat]
 		System.out.println( Arrays.toString(m) );
 		

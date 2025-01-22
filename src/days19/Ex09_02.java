@@ -16,7 +16,7 @@ public class Ex09_02 {
 		
 		// LinkedList는 아래것들을 구현함.
 		// List 인터페이스
-		// Deque -부모-> Queue 인터페이스
+		// Deque - 부모 -> Queue 인터페이스
 		Queue q = new LinkedList();
 
 		q.offer("주정호");

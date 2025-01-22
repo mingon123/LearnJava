@@ -32,7 +32,7 @@ public class Ex06 {
 		// list.sort(null);			// List로 받아도 이렇게 사용 가능
 		System.out.println( list );
 		
-		// [2-1] String[] -> ArrayList
+		// [2-1] list -> ArrayList
 		ArrayList list2 = new ArrayList(list); // 매개변수 다형성, 생성자
 
 		

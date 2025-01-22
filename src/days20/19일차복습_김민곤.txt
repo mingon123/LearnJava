@@ -35,21 +35,15 @@
 
 
   3) 컬렉션 프레임워크의 핵심 인터페이스( 3가지 타입 ) 에 대해서 설명하세요.  
-	- Collection 인터페이스 : 데이터를 개별적으로 관리하는 인터페이스
-
-		하위 인터페이스로 List, Set, Queue 인터페이스가 있다. 
-		List의 특징은 순서유지O, 중복허용O이고, ArrayList, LinkedList, Vector 등이 있다
-		Set의 특징은 순서유지X, 중복허용X이고, HashSet, TreeSet 등이 있다.
-		Queue의 특징은 데이터의 삽입 및 삭제 순서를 중요시 여긴다. PriorityQueue, ArrayDeque 등이 있다.
+	
+	- List 인터페이스 : 특징은 순서유지O, 중복허용O이고, ArrayList, LinkedList, Vector 등이 있다
+	
+	- Set 인터페이스 : 특징은 순서유지X, 중복허용X이고, HashSet, TreeSet 등이 있다.
 
 	- Map 인터페이스 : 데이터를 키(key)와 값(value)의 쌍으로 관리한다.
-		
-		특징: 키는 중복 불가X, 값은 중복 허용O
+			특징: 키는 중복 불가X, 값은 중복 허용O
 			빠른 검색과 데이터 매핑에 사용한다.
-
-	- Iterator 인터페이스 : 컬렉션 내 요소를 순처적으로 접근하기 위한 인터페이스
-	
-		
+					
 
 
 

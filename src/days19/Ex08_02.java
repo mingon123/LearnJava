@@ -29,7 +29,7 @@ public class Ex08_02 {
 			list.set(index, "오재문");
 		}
 		
-		// list.remove(); 중복선언
+//		list.remove(); // 중복선언
 		// 첫번째 일치하는 객체를 삭제 - removeFirstOccurrence()
 		list.removeFirstOccurrence("홍길동"); 
 		

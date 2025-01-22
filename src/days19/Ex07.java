@@ -25,7 +25,7 @@ public class Ex07 {
 		v.add("박예진");
 		v.addElement("양희동"); // 기능, 매개변수는 add와 같음. 리턴값이 다름
 		v.addElement("홍길동");
-		// v.addAll();
+		v.addAll(v);
 		
 		System.out.println( v.size() ); // 3
 		
