@@ -42,7 +42,7 @@ public class Ex11 {
 		// {password=tiger, className=oracle.jdbc.driver.OracleDriver, user=scott, url=jdbc:oracle:thin:@localhost:1521:xe}
 		System.out.println( p );
 		
-		/*
+
 		// 파일로 저장. FileWriter/FileReader
 		String fileName = "jdbc.properties";	// 경로안주면 지금 프로젝트 경로. .properties : 설정파일
 		try (FileWriter writer = new FileWriter(fileName)) {
@@ -51,7 +51,7 @@ public class Ex11 {
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-		*/
+
 		
 		// XML 파일 저장
 //		String fileName = "jdbc.xml";	// 경로안주면 지금 프로젝트 경로. 
