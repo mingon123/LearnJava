@@ -24,8 +24,8 @@ public class Ex04_02 {
 		// 2. 열거형 사용 방법
 		// 열거형이름.상수명
 		System.out.println( Card.CLOVER ); // "CLOVER" 출력
-		System.out.println( Card.HEART.toString() ); // "HEART" 출력
 		
+		System.out.println( Card.HEART ); // "HEART" 출력
 		System.out.println( Card.HEART.name() ); // "HEART" - HEART. 찍을 수 있다는 것은 객체 선언됨
 		System.out.println( Card.HEART.ordinal() ); // 1 - 자릿수
 		

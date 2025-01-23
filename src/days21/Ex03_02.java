@@ -21,7 +21,6 @@ public class Ex03_02 {
 		int item = (int) box.getItem(); // Object로 받으면 다운캐스팅 해야함
 		System.out.println( item ); // private라 get/set으로 설정
 
-		
 		Box box2 = new Box();
 		box2.setItem("문자열");
 		String sItem = (String) box2.getItem(); // 다운캐스팅
@@ -45,7 +44,6 @@ public class Ex03_02 {
 		// 제네릭 없으면 이렇게 해야함
 		ArrayList list = new ArrayList();
 		Collections.addAll(list, 3,5,2,4,1);
-		
 		// list.add("String"); // 이렇게 추가못함 list를 int형으로 파싱하기 때문에
 		// list.add(1.23);
 		// list.add('C');
@@ -63,10 +61,11 @@ public class Ex03_02 {
 		*/
 		
 		
-//		// 제네릭 사용
+//		// 제네릭 사용 - 형변환 안해도됨
 //		ArrayList <Integer> list = new ArrayList<>();
 //		
-//		// list.add("dd"); 이렇게 하면 오류생김
+//		// list.add("String"); 이렇게 하면 오류생김
+//		
 //		Collections.addAll(list, 3,5,2,4,1);
 //		System.out.println(list);
 //		
@@ -77,11 +76,6 @@ public class Ex03_02 {
 //			int n = ir.next();
 //			System.out.println(n);
 //		}		
-		
-		
-		
-		
-		
 		
 		
 	} // main

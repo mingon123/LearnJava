@@ -11,10 +11,12 @@ import java.util.ArrayList;
  		[ 제네릭 클래스의 객체 생성과 사용 ]
  */
 
-/* class가 default라 중복선언 오류생겨서 이렇게 함
+
 public class Ex03_04 {
 
 	public static void main(String[] args) {
+		
+		/* class가 default라 중복선언 오류생겨서 이렇게 함
 		
 		Box03<Fruit> fruitBox = new Box03<>();
 		Box03<Apple> appleBox = new Box03<>();
@@ -34,13 +36,13 @@ public class Ex03_04 {
 		// toyBox.add(new Apple() );
 		
 		toyBox.add(new Toy() ); // 이건가능
-		
+		*/
 		
 	} // main
 
 } // class
 
-
+/*
 // Fruit
 // ㄴ Apple
 // ㄴ Grape

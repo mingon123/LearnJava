@@ -30,7 +30,7 @@ public class Ex02 {
 		list.add(4);
 		list.add(5);
 		*/
-		System.out.println(list);
+		System.out.println(list);  // [1, 2, 3, 4, 5]
 		
 		
 		// 오른쪽으로 2칸씩 list의 요소를 이동(회전)

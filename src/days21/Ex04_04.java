@@ -1,5 +1,7 @@
 package days21;
 
+import java.util.Iterator;
+
 /**
  * @author kenik
  * @date 2025. 1. 23. - 오후 12:36:18
@@ -47,6 +49,11 @@ public class Ex04_04 {
 	}
 	
 	public static void main(String[] args) {
+		
+		Direction [] dirArr = Direction.values();
+		for (Direction d : dirArr) {
+			System.out.println( d.name() + "/" + d.getValue() + "/" + d.getSymbol() );
+		}
 		
 		
 		
