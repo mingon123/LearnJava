@@ -1,9 +1,7 @@
 package days22;
 
-import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
-import java.io.FileReader;
 
 public class Ex03_02 {
 
@@ -44,3 +42,8 @@ public class Ex03_02 {
 	}
 
 }
+
+
+
+
+
