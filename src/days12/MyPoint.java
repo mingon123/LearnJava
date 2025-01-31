@@ -13,13 +13,11 @@ public class MyPoint {
 		System.out.println("> MyPoint default constructor");
 	}
 	
-	
 	public MyPoint(int i, int j) {
 		this.x = i;
 		this.x = j;
 		System.out.println("> MyPoint 2 constructor");
 	}
-
 
 	public MyPoint(int i) {
 		this(i, i);		// 생성자 안에서 또다른 생성자를 호출하는 this - 생성자를 재사용해서 호출
@@ -72,7 +70,6 @@ public class MyPoint {
 		newP.x = p.x;
 		newP.y = p.y;
 				
-		
 		return newP;
 	}
 	

@@ -2,7 +2,6 @@ package days22;
 
 import java.io.DataOutputStream;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 // 바이트 스트림 사용
 public class Ex03 {
 
@@ -38,3 +37,11 @@ public class Ex03 {
 	}
 
 }
+
+
+
+
+
+
+
+
