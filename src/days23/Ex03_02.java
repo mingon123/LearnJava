@@ -43,8 +43,9 @@ public class Ex03_02 {
 		
 		File[] listArr = parent.listFiles();
 		for (int i = 0; i < listArr.length; i++) {
-			Date d = new Date();
 			File f = listArr[i];
+			Date d = new Date();
+			
 			System.out.printf("%s\t %s\t %s\t %s\t \n", f.isDirectory() ? "[폴더]" : "파일", f.getName(), sdf.format(d), f.isFile() ? f.length()+"(bytes)" : "" ); // f.lastModified() : 수정된 날짜를 long형으로 반환 
 		} // for i
 		
