@@ -53,6 +53,7 @@ public class Ex04_03 {
 		String str = "안녕하세요. admin 홍길동입니다. 안녕~";
 		// str 문자열 속에서 홍길동을 찾아서 김민곤으로 변경...
 		int index = str.indexOf("홍길동");
+		System.out.println(str.indexOf("홍길동"));
 		boolean b = str.contains("홍길동");
 
 //		String result =  str.replace('홍', '김');		// 매개변수 char
