@@ -76,7 +76,10 @@ public class NoteMain {
 					System.out.println("~~~~~~~~~");
 				}
 				
-				else if(no==5) System.out.println("글삭제");
+				else if(no==5) {
+					// 글삭제
+					
+				}
 				else if(no==6) {
 					System.out.println("프로그램을 종료합니다."); 
 					break; // 종료

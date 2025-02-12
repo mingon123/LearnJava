@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import kr.util.DBUtil;
+import oracle.net.aso.f;
 
 /*
 DAO : Data Access Object
@@ -130,13 +131,56 @@ public class NoteDAO {
 	
 	// 글수정
 	public void updateInfo(int num,String name,String passwd,String subject,String content,String email) {
-	
-	}
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		String sql = null;
+		try {
+			// JDBC 수행 1,2단계
+			conn = DBUtil.getConnection();
+			// SQL문 작성
+			sql = "UPDATE note SET num,?,?,?,?,?";
+			// JDBC 수행 3단계
+			pstmt = conn.prepareStatement(sql);
+			// ?에 데이터 바인딩
+			pstmt.setString(1, name);
+			pstmt.setString(2, passwd);
+			pstmt.setString(3, subject);
+			pstmt.setString(4, content);
+			pstmt.setString(5, email);
+			// JDBC 수행 4단계
+			int count = pstmt.executeUpdate();
+			System.out.println(count + "개 행의 정보를 수정했습니다.");
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBUtil.executeClose(null, pstmt, conn);
+		}
+	} // updateInfo
 	
 	// 글삭제
 	public void deleteInfo(int num) {
-		
-	}
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		String sql = null;
+		try {
+			// JDBC 수행 1,2단계
+			conn = DBUtil.getConnection();
+			System.out.println("note 테이블에 데이터를 삭제합니다.");
+			// SQL문 작성
+			sql = "DELETE FROM note WHERE num=?";
+			// JDBC 수행 3단계
+			pstmt = conn.prepareStatement(sql);
+			// ?에 데이터 바인딩
+			pstmt.setInt(1, num);
+			// JDBC 수행 4단계 : SQL문 실행
+			int count = pstmt.executeUpdate();
+			System.out.println(count+"개 행을 삭제했습니다.");
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			DBUtil.executeClose(null, pstmt, conn);
+		}
+	} // deleteInfo
 	
 	// 종료
 }

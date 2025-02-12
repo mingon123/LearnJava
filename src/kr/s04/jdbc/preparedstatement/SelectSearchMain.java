@@ -64,5 +64,5 @@ public class SelectSearchMain {
 
 // select는 3가지
 // 1.while문
-// 2.if~else + do~while문
-// 3.do~while문
+// 2.if~else문
+// 3.if~else + do~while문
