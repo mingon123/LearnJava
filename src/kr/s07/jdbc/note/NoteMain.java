@@ -73,13 +73,58 @@ public class NoteMain {
 					note.selectInfo();
 					
 					System.out.print("수정할 글의 번호:");
-					System.out.println("~~~~~~~~~");
+					int num = Integer.parseInt(br.readLine());
+					// 전달한 번호로 레코드 존재 여부 체크
+					// 1: 존재, 0: 미존재, -1: 오류
+					int count = note.checkRecord(num);
+					if(count == 1) {
+						note.selectDetailInfo(num);
+						System.out.println("---------------------------");
+						
+						System.out.print("이름:");
+						String name = br.readLine();
+						
+						System.out.print("비밀번호:");
+						String passwd = br.readLine();
+					
+						System.out.print("제목:");
+						String subject = br.readLine();
+						
+						System.out.print("내용:");
+						String content = br.readLine();
+						
+						System.out.print("이메일:");
+						String email = br.readLine();
+						
+						note.updateInfo(num, name, passwd, subject, content, email);
+						
+					} else if(count == 0) {
+						System.out.println("번호를 잘못 입력했습니다.");
+					} else {
+						System.out.println("정보 처리 중 오류 발생");
+					}
+					
 				}
 				
 				else if(no==5) {
 					// 글삭제
+					note.selectInfo();
 					
+					System.out.print("삭제할 글의 번호:");
+					int num = Integer.parseInt(br.readLine());
+					
+					// 전달한 번호로 레코드 존재 여부 체크
+					int count = note.checkRecord(num);
+					// 1:존재, 0:미존재, -1:오류
+					if(count == 1) {
+						note.deleteInfo(num);
+					} else if (count == 0) {
+						System.out.println("번호를 잘못 입력했습니다.");
+					} else {
+						System.out.println("정보 처리 중 오류 발생");
+					}
 				}
+				
 				else if(no==6) {
 					System.out.println("프로그램을 종료합니다."); 
 					break; // 종료
