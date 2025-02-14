@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import kr.util.DBUtil;
-import oracle.net.aso.f;
 
 /*
 DAO : Data Access Object
@@ -212,10 +211,6 @@ public class NoteDAO {
 			// 자원정리
 			DBUtil.executeClose(null, pstmt, conn);
 		}
-		
-		
-		
-		
 	} // deleteInfo
 	
 	// 종료

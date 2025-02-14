@@ -5,5 +5,4 @@ public class NotAcceptableValueException extends Exception{
 	public NotAcceptableValueException(String str) {
 		super(str);
 	}
-
 }

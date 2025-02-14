@@ -196,7 +196,5 @@ public class CarDAO {
 		} finally {
 			DBUtil.executeClose(null, pstmt, conn);
 		}
-	} // deleteCar
-	
-	
+	} // deleteCar	
 }
