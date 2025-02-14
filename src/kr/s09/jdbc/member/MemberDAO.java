@@ -31,6 +31,7 @@ public class MemberDAO {
 			}
 		}catch (Exception e) {
 			e.printStackTrace();
+//			flag = false; 로 예외발생 시 다른 것 추가할 수 있음
 		}finally {
 			// 자원정리
 			DBUtil.executeClose(rs, pstmt, conn);

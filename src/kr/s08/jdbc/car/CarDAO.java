@@ -71,7 +71,7 @@ public class CarDAO {
 					System.out.println(rs.getDate("reg_date"));
 				} while(rs.next());
 			} else {
-				System.out.println("표시할 데이터가 없습니다.");
+				System.out.println("등록된 데이터가 없습니다.");
 			}
 			System.out.println("-------------------------------");
 		} catch (Exception e) {
@@ -100,10 +100,10 @@ public class CarDAO {
 			// JDBC 수행 4단계
 			rs = pstmt.executeQuery();
 			if(rs.next()) {
-				count = 1;
+				count = 1; // 레코드가 존재할 때 1 저장
 			}
 		} catch (Exception e) {
-			count = -1;
+			count = -1; // 오류 발생
 		} finally {
 			// 자원정리
 			DBUtil.executeClose(rs, pstmt, conn);
@@ -134,6 +134,7 @@ public class CarDAO {
 				System.out.println("색상 : " + rs.getString("color"));
 				System.out.println("제조사 : " + rs.getString("maker"));
 				System.out.println("가격 : " + rs.getInt("price"));
+				System.out.println("등록일 : " + rs.getDate("reg_date"));
 			} else {
 				System.out.println("검색된 정보가 없습니다.");
 			}

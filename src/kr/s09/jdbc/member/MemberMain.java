@@ -80,7 +80,7 @@ public class MemberMain {
 					System.out.println("잘못 입력했습니다.");
 				}
 			} catch(NumberFormatException e){
-				e.printStackTrace();
+				System.out.println("[숫자만 입력 가능");
 			} 
 
 		}
